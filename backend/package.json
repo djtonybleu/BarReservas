@@ -16,12 +16,8 @@
     "jsonwebtoken": "^9.0.0",
     "joi": "^17.9.2",
     "pg": "^8.11.0",
-    "redis": "^4.6.7",
-    "nodemailer": "^6.9.3",
-    "qrcode": "^1.5.3",
-    "ws": "^8.13.0"
+    "qrcode": "^1.5.3"
   },
-  "devDependencies": {},
   "engines": {
     "node": ">=18.0.0"
   }
