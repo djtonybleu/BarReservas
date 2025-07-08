@@ -1,0 +1,39 @@
+{
+  "name": "barreservas-backend",
+  "version": "1.0.0",
+  "description": "Backend API for BarReservas reservation system",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "setup-db": "psql -d barreservas -f schema.sql",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "express-rate-limit": "^6.7.0",
+    "bcrypt": "^5.1.0",
+    "jsonwebtoken": "^9.0.0",
+    "joi": "^17.9.2",
+    "pg": "^8.11.0",
+    "redis": "^4.6.7",
+    "nodemailer": "^6.9.3",
+    "qrcode": "^1.5.3",
+    "ws": "^8.13.0",
+    "hpp": "^0.2.3",
+    "express-mongo-sanitize": "^2.2.0",
+    "isomorphic-dompurify": "^2.0.0",
+    "validator": "^13.9.0",
+    "rate-limit-redis": "^3.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

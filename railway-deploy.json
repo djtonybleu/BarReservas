@@ -1,0 +1,38 @@
+{
+  "name": "barreservas-production",
+  "description": "BarReservas - Sistema de Reservas Enterprise",
+  "source": {
+    "type": "github",
+    "repo": "your-username/BarReservas"
+  },
+  "services": [
+    {
+      "name": "backend",
+      "source": "./backend",
+      "build": {
+        "command": "npm install"
+      },
+      "start": {
+        "command": "npm start"
+      },
+      "environment": {
+        "NODE_ENV": "production",
+        "PORT": "3000"
+      },
+      "healthcheck": {
+        "path": "/health",
+        "timeout": 30
+      }
+    }
+  ],
+  "databases": [
+    {
+      "type": "postgresql",
+      "name": "barreservas-db"
+    },
+    {
+      "type": "redis",
+      "name": "barreservas-cache"
+    }
+  ]
+}
