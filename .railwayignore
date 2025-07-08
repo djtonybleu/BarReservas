@@ -1,0 +1,23 @@
+# Frontend files
+src/
+public/
+dist/
+node_modules/
+.git/
+cypress/
+tests/
+monitoring/
+security/
+integrations/
+supabase/
+aws/
+.github/
+vite.config.ts
+tailwind.config.js
+postcss.config.js
+tsconfig*.json
+eslint.config.js
+cypress.config.js
+jest.config.js
+Dockerfile
+docker-compose.yml
